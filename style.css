@@ -188,6 +188,10 @@ section.conquistas{
  .conquistas-single h2{
      font-size: 30px;
  }
+ .conquistas-single img{
+     max-width: 100%;
+     filter: grayscale(100%);
+ }
 .logo{
     width: 20%;
 }
@@ -204,13 +208,71 @@ section.conquistas{
      font-size: 23px;
      margin-top: 8px;
  }
+.menu-itens{
+    position: absolute;
+    left: 0;
+    top: 60px;
+width: 100%;
+    text-align: center;
+    display: block;
+    background-color: white;
+    border-bottom: 2px solid blue;
+    display: block;
+    transition: 1s;
+opacity: 0;
+}
+/*
+criando o menu com os .show e ,hidde 
+*/
+.menu-itens.show{
+    opacity: 1;
+ }
+.menu-itens.hidde{
+    opacity: 0;
+ }
+.menu-itens a{
+    display: block;
+   text-decoration: none;
+   color: blue;
+}
+section.sobre-empreendedor{
+padding: 40px 0;
+
+}
+
+.sobre-empreendedor-video video{
+     max-width:100%
+    
+}
+.sobre-empreendedor-video{
+    width: 50%;
+    padding: 50px;
+}
+.sobre-empreendedor-content{
+    width: 50%;
+    padding: 50px 50px;
+}
+.sobre-empreendedor-content h2{
+    color: #124265;
+    margin-bottom: 20px;
+}
+    .sobre-empreendedor-content p{
+        color: #444;
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
 @media screen and(max-width: 768px){
     .diferencial-singl{
         width:100%;
         margin-bottom: 20px;
     }
+    
     .conteudo-sobre p{width: 100%; margin:20px ;}
 }
 footer{
+    border-bottom: 2px solid rgb(200,200,200);
+    padding: 50px 0;
     font-size:medium;
+  color: #124265;
+    text-align: center;
 }

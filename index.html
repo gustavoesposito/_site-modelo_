@@ -19,14 +19,22 @@
 
 <div class="menu">
 <a href="#">Home</a>
+
 <a href="#">Sobre</a>
+
 <a href="#">Contato</a>
+
 <a class="btn-menu" href="#" >
     Get Started</a>
 </div><!---menu-->
 <div class="menu-mobile">
-<i class="fas fa-bars"></i>
+<i class="fas fa-bars menu-mobile-icon"></i>
+<div class="menu-itens">
+<a href="">Home</a>
+<a href="">Sobre</a>
+<a href="">Contato</a>
 </div>
+</div><!---menu-mobile-->
 </div><!--center-->
  </header>
 
@@ -82,35 +90,91 @@
 </section><!--sobre-->
 <section class="conquistas">
 <div class="center">
-    <div class="conquistas-single">
+    <div class="conquistas-single" style="width:16%;margin-right:9%;">
         <h2>+100mil </h2>
         <p>Pessoas Ajudadas</p>
    
     </div>
-    <div class="conquistas-single">
+    <div class="conquistas-single"style="width:16%;margin-right:9%;">
         <h2>+100mil </h2>
         <p>Pessoas Ajudadas</p>
    
     </div>
-    <div class="conquistas-single">
+    <div class="conquistas-single"style="width:16%;margin-right:9%;">
         <h2>+100mil </h2>
         <p>Pessoas Ajudadas</p>
    
     </div>
-    <div class="conquistas-single">
+    <div class="conquistas-single"style="width:16%;margin-right:9%;">
         <h2>+100mil </h2>
         <p>Pessoas Ajudadas</p>
    
     </div>
 </div>
 </section>
+<section class=":sobre-empreendedor">
+<div class="center">
+    <iframe width="560" height="315" class="sobre-empreendedor-video" src="https://www.youtube.com/embed/t_9aD-M5x7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="sobre-empreendedor-content">
+        <h2>Título 12334</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cumque eveniet fuga ducimus excepturi quos itaque ullam atque sequi facere.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cumque eveniet fuga ducimus excepturi quos itaque ullam atque sequi facere.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cumque eveniet fuga ducimus excepturi quos itaque ullam atque sequi facere.</p>
+    </div>
+</div><!---center-->
+</section><!--sobre-empreendedor-->
 
-
+<section class="conquistas">
+    <div class="center">
+        <div class="conquistas-single">
+            <h2>+100mil </h2>
+            <p>Pessoas Ajudadas</p>
+       
+        </div>
+        <div class="conquistas-single">
+            <h2>+100mil </h2>
+            <p>tirar o p e o h2 e colocar img</p>
+       
+        </div>
+        <div class="conquistas-single">
+            <h2>+100mil </h2>
+            <p>tirar o p e o h2 e colocar img </p>
+       
+        </div>
+        <div class="conquistas-single">
+            <h2>+100mil </h2>
+            <p>tirar o p e o h2 e colocar img</p>
+       
+        </div>
+    </div>
+    </section>
 
 
 
 
      <script src="https://kit.fontawesome.com/16544f2866.js" crossorigin="anonymous"></script>
+<script>
+    //add menu quando clicar 
+    var el = document.querySelector('.menu-mobile-icon')
+
+    el.addEventListener('click',()=>{
+        //mostrando menu
+    var menuItens= document.querySelector('.menu-itens');
+    //colocando menu
+    if (menuItens.classList.contains('show')){
+        menuItens.classList.add('hide');
+        menuItens.classList.remove('show');
+    }else{
+        //tirando menu
+        menuItens.classList.add('show');
+        menuItens.classList.remove('hide');
+    }
+    });
+</script>
+
+
+
+     <footer>&copy;JK´s</footer>
+
 </body>
-<footer>&copy;JK´s</footer>
+ 
 </html>
