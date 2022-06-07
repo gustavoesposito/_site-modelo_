@@ -191,6 +191,12 @@ section.conquistas{
  .conquistas-single img{
      max-width: 100%;
      filter: grayscale(100%);
+     transition: 1s;
+     transform: scale(1,1);
+ }
+ .conquistas-single img:hover{
+     filter: grayscale(0);
+     transform:scale(1.1.,1.1);
  }
 .logo{
     width: 20%;
@@ -261,6 +267,58 @@ padding: 40px 0;
         font-size: 14px;
         margin-bottom: 14px;
     }
+        /*depoimentos*/
+    section.depoimentos{
+padding: 40px 0;
+    }
+    section.depoimentos .depoimentos-chamada{
+ text-align: center;
+    }
+ .depoimentos-chamada h2{
+     color: #124265;
+text-transform: uppercase;
+    }
+    .depoimentos-chamada p{
+        margin: 2px 0;
+        color: #ccc;
+        font-size: 14px;
+    }
+ 
+    .carrousel{
+        display: flex;
+    }
+    .carrousel-single{
+        width: 31%;
+        margin-right: 2%;
+        text-align: center;
+    }
+    .carrousel-single i{
+        max-width: 100%;
+    }
+    .carrousel-single-box{
+        padding: 20px;
+        background-color: #f3f9fd;
+        border-radius: 10px;
+    }
+    .carrousel-single-box p{
+        font-style: italic;
+        font-size: 16px;
+        color:#4b4b4b;
+    }
+        .carrousel-single-box i{
+            color: #c9e3f5;
+            font-size: 19px;
+            padding: 0 8px;
+        }
+        .carrousel-single img{
+             width: 70px;
+             height: 70px;
+             display: inline ;
+             margin: 2px 0;
+             border-radius: 50%;
+       
+     }
+    /*fim do depoimento*/
 @media screen and(max-width: 768px){
     .diferencial-singl{
         width:100%;
