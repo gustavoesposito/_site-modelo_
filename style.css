@@ -318,6 +318,9 @@ text-transform: uppercase;
              border-radius: 50%;
        
      }
+     .carrousel-single span{
+         color: #ccc;
+     }
     /*fim do depoimento*/
 @media screen and(max-width: 768px){
     .diferencial-singl{
